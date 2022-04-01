@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Amazon Search</h1>
+    <button id="all">Get All URL's</button>
+    <h4>Add a new Creator</h4>
+    <form id="create-form">
+        <input id= "channel-input" type="text" placeholder="paste link HERE"/>
+        <input id= "name-input" type="text" placeholder="Youtuber name"/>
+        <button type="submit" >submit</button>
+        
+    </form>
+    
+    <br>
+    <form id="search-form">
+        <input id= "name-search" type="text" placeholder="Search a Youtuber"/>
+        <button type="submit" >submit</button>
+        
+    </form>
+    <div class ="container"></div>
+    <section></section>
+    <script>
+        // function submitChannel() {
+        //     const channelURL = document.querySelector('.channel-input').value;
+        //     fetch('http://localhost:80/creators'), {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': "application/json"
+        //         },
+        //         body: JSON.stringify({channelURL})
+        //     }
+        // }
+
+
+        // function newEl(type, attrs ={}){
+        //     const el = document.createElement(type)
+        //     for(let attr in attrs) {
+        //        const value = attrs[attr]
+        //        if (attr == 'innerText') el.innerText = value;
+        //        else el.setAttribute(attr, value)
+        //     }
+        //     return el;
+        // }
+     
+        // async function loadCreators() {
+        //     const res = await fetch('http://localhost:80/creators')
+        //     const creators = await res.json()
+            
+        //     const ctr = document.querySelector('.container');
+            
+        //     creators.forEach(creator => {
+        //         const card = newEl('div', {class: 'card'});
+        //         const title = newEl('h4', {innerText: creator.name});
+        //         const img = newEl('img', {scr: creator.img});
+        //         card.appendChild(title);
+        //         card.appendChild(img);
+        //         ctr.appendChild(card);
+        //     })
+        // }
+        //     loadCreators()
+
+        
+        
+
+
+
+    </script>
+    <style>
+        .container{
+            display: flex;
+            ;
+        }
+        .card {
+            margin: 5px;
+            padding: 20px; 
+            border: 1px solid white;
+        }
+    </style>
+
+
+<script src="../node_modules/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
